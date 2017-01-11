@@ -9,17 +9,20 @@
   <script src="js/scripts.js"></script>
 </head>
 <body class="container">
-  <h1 class=''>Heading</h1>
+  <div class="jumbotron">
+    <h1>Website Name</h1>
+  </div>
   <form>
-    <input type="text" class="form-control" id="name" placeholder="First Name">
-    <input type="text" class="form-control" id="name" placeholder="Middle Initial">
-    <input type="text" class="form-control" id="name" placeholder="Last Name">
-    <input type="text" class="form-control" id="name" placeholder="Phone">
-    <input type="text" class="form-control" id="name" placeholder="Email">
-    <input type="text" class="form-control" id="name" placeholder="Address">
-    <input type="text" class="form-control" id="name" placeholder="Street Address">
-    <input type="text" class="form-control" id="name" placeholder="City">
-    <select class="form-control" id="name">
+    <h2>Enter your information:</h2>
+    <input type="text" class="form-control" id="fn" placeholder="First Name">
+    <input type="text" class="form-control" id="mi" placeholder="Middle Initial">
+    <input type="text" class="form-control" id="ln" placeholder="Last Name">
+    <input type="text" class="form-control" id="ph" placeholder="Phone">
+    <input type="text" class="form-control" id="email" placeholder="Email">
+    <input type="text" class="form-control" id="adr" placeholder="Address 1">
+    <input type="text" class="form-control" id="adr2" placeholder="Address 2">
+    <input type="text" class="form-control" id="city" placeholder="City">
+    <select class="form-control" id="state">
       <option>Choose State...</option>
       <option>AL</option>
       <option>AK</option>
@@ -28,7 +31,7 @@
       <option>CA</option>
       <option>CO</option>
       <option>CT</option>
-      <option>DE</option>
+      <option label="DE" value="DE"/>
       <option>FL</option>
       <option>GA</option>
       <option>HI</option>
@@ -72,15 +75,39 @@
       <option>WI</option>
       <option>WY</option>
     </select>
-    <input type="text" class="form-control" id="name" placeholder="Zip Code">
+    <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
     <button type="submit" class='btn'>Submit</button>
   </form>
 
-  <div class="receipt">
+  <div class="confirm">
+    <h2>
+      Is this information correct?
+    </h2>
     <p>
-      Thank you for your purchase, <span class="firstname"></span>. Your package will be shipped to <span class="address"></span> <span class="address2"></span> <span class="city"></span>, <span class="state"></span>, <span class="zip"></span>will arrive within 7 - 10 business days.
+      <span class="firstname"></span>
+      <span class="middlename"></span>.
+      <span class="lastname"></span>
     </p>
+    <p>
+      <span class="phone"></span>
+      <span class="email"></span>
+    </p>
+    <p>
+      <span class="address"></span>
+      <span class="address2"></span>
+      <span class="city"></span>
+      <span class="state"></span>
+      <span class="zipcode"></span>
+    </p>
+    <button type="button" class='btn' id="confirm">Correct</button>
+    <button type="button" class='btn' id="incorrect">Incorrect</button>
+  </div>
 
+  <div class="receipt">
+    <h2>Receipt</h2>
+    <p>
+      Thank you for your purchase, <span class="firstname"></span>. Your package will be shipped to <span class="address"></span> <span class="address2"></span>, <span class="city"></span>, <span class="state"></span> <span class="zip"></span>. It will arrive within 7 - 10 business days.
+    </p>
   </div>
 
 </body>
