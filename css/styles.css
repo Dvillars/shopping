@@ -5,3 +5,47 @@
 h1, h2 {
   text-align: center;
 }
+
+.container {
+  background-color: rgb(12, 91, 136)
+}
+
+input, select {
+  margin: .25em;
+}
+
+.form-control {
+  max-width: 50em;
+  margin: auto;
+}
+
+.confirm, .receipt {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: rgb(242, 140, 51);
+  color: white;
+  margin: 3px;
+  margin-bottom: 2em;
+}
+
+.panel {
+  background-color: rgb(242, 160, 51);
+  color: white;
+  border-radius: 2em;
+}
+
+button {
+  background-color: rgb(12, 91, 136);
+
+}
+
+.centerbutton {
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+button {
+  margin: 5px;
+}

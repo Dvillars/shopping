@@ -23,7 +23,7 @@ $(document).ready(function(){
     $('.zip').text(zipcode);
     $('.email').text(email);
 
-    $("form").slideUp();
+    $(".form").slideUp();
     $(".confirm").slideDown();
     event.preventDefault();
   });
@@ -33,6 +33,6 @@ $(document).ready(function(){
   });
   $("#incorrect").click(function(){
     $(".confirm").slideUp();
-    $("form").slideDown();
+    $(".form").slideDown();
   });
 });

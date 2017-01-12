@@ -12,77 +12,83 @@
   <div class="jumbotron">
     <h1>Website Name</h1>
   </div>
-  <form>
-    <h2>Enter your information:</h2>
-    <input type="text" class="form-control" id="fn" placeholder="First Name">
-    <input type="text" class="form-control" id="mi" placeholder="Middle Initial">
-    <input type="text" class="form-control" id="ln" placeholder="Last Name">
-    <input type="text" class="form-control" id="ph" placeholder="Phone">
-    <input type="text" class="form-control" id="email" placeholder="Email">
-    <input type="text" class="form-control" id="adr" placeholder="Address 1">
-    <input type="text" class="form-control" id="adr2" placeholder="Address 2">
-    <input type="text" class="form-control" id="city" placeholder="City">
-    <select class="form-control" id="state">
-      <option>Choose State...</option>
-      <option>AL</option>
-      <option>AK</option>
-      <option>AZ</option>
-      <option>AR</option>
-      <option>CA</option>
-      <option>CO</option>
-      <option>CT</option>
-      <option label="DE" value="DE"/>
-      <option>FL</option>
-      <option>GA</option>
-      <option>HI</option>
-      <option>ID</option>
-      <option>IL</option>
-      <option>IN</option>
-      <option>IA</option>
-      <option>KS</option>
-      <option>KY</option>
-      <option>LA</option>
-      <option>ME</option>
-      <option>MD</option>
-      <option>MA</option>
-      <option>MI</option>
-      <option>MN</option>
-      <option>MS</option>
-      <option>MO</option>
-      <option>MT</option>
-      <option>NE</option>
-      <option>NV</option>
-      <option>NH</option>
-      <option>NJ</option>
-      <option>NM</option>
-      <option>NY</option>
-      <option>NC</option>
-      <option>ND</option>
-      <option>OH</option>
-      <option>OK</option>
-      <option>OR</option>
-      <option>PA</option>
-      <option>RI</option>
-      <option>SC</option>
-      <option>SD</option>
-      <option>TN</option>
-      <option>TX</option>
-      <option>UT</option>
-      <option>VT</option>
-      <option>VA</option>
-      <option>WA</option>
-      <option>WV</option>
-      <option>WI</option>
-      <option>WY</option>
-    </select>
-    <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
-    <button type="submit" class='btn'>Submit</button>
-  </form>
+  <div class="panel form">
+    <form>
+      <h2>Enter your information:</h2>
+      <hr>
+      <input type="text" class="form-control" id="fn" placeholder="First Name">
+      <input type="text" class="form-control" id="mi" placeholder="Middle Initial">
+      <input type="text" class="form-control" id="ln" placeholder="Last Name">
+      <input type="text" class="form-control" id="ph" placeholder="Phone">
+      <input type="text" class="form-control" id="email" placeholder="Email">
+      <input type="text" class="form-control" id="adr" placeholder="Address 1">
+      <input type="text" class="form-control" id="adr2" placeholder="Address 2">
+      <input type="text" class="form-control" id="city" placeholder="City">
+      <select class="form-control" id="state">
+        <option>Choose State...</option>
+        <option>AL</option>
+        <option>AK</option>
+        <option>AZ</option>
+        <option>AR</option>
+        <option>CA</option>
+        <option>CO</option>
+        <option>CT</option>
+        <option label="DE" value="DE"/>
+        <option>FL</option>
+        <option>GA</option>
+        <option>HI</option>
+        <option>ID</option>
+        <option>IL</option>
+        <option>IN</option>
+        <option>IA</option>
+        <option>KS</option>
+        <option>KY</option>
+        <option>LA</option>
+        <option>ME</option>
+        <option>MD</option>
+        <option>MA</option>
+        <option>MI</option>
+        <option>MN</option>
+        <option>MS</option>
+        <option>MO</option>
+        <option>MT</option>
+        <option>NE</option>
+        <option>NV</option>
+        <option>NH</option>
+        <option>NJ</option>
+        <option>NM</option>
+        <option>NY</option>
+        <option>NC</option>
+        <option>ND</option>
+        <option>OH</option>
+        <option>OK</option>
+        <option>OR</option>
+        <option>PA</option>
+        <option>RI</option>
+        <option>SC</option>
+        <option>SD</option>
+        <option>TN</option>
+        <option>TX</option>
+        <option>UT</option>
+        <option>VT</option>
+        <option>VA</option>
+        <option>WA</option>
+        <option>WV</option>
+        <option>WI</option>
+        <option>WY</option>
+      </select>
+      <input type="text" class="form-control" id="zipcode" placeholder="Zip Code">
+      <div class="centerbutton">
+        <button type="submit" class='btn'>Submit</button>
+      </div>
 
-  <div class="confirm">
+    </form>
+  </div>
+  <div class="confirm panel">
     <h2>
       Is this information correct?
     </h2>
+    <hr>
     <p>
       <span class="firstname"></span>
       <span class="middlename"></span>.
@@ -99,14 +105,21 @@
       <span class="state"></span>
       <span class="zipcode"></span>
     </p>
-    <button type="button" class='btn' id="confirm">Correct</button>
-    <button type="button" class='btn' id="incorrect">Incorrect</button>
+    <div class="centerbutton">
+      <button type="button" class='btn' id="confirm">Correct</button>
+      <button type="button" class='btn' id="incorrect">Incorrect</button>
+
+    </div>
   </div>
 
-  <div class="receipt">
-    <h2>Receipt</h2>
+  <div class="receipt panel">
+    <h2>Success!</h2>
+    <hr>
     <p>
-      Thank you for your purchase, <span class="firstname"></span>. Your package will be shipped to <span class="address"></span> <span class="address2"></span>, <span class="city"></span>, <span class="state"></span> <span class="zip"></span>. It will arrive within 7 - 10 business days.
+      Thank you for your purchase, <span class="firstname"></span>.</p>
+      <p> Your package will be shipped to: <span class="address"></span> <span class="address2"></span>, <span class="city"></span>, <span class="state"></span> <span class="zip"></span>.
+      </p>
+      <p>It should arrive within 7 - 10 business days!
     </p>
   </div>
 
